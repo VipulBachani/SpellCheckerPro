@@ -1,0 +1,88 @@
+{
+	"info": {
+		"_postman_id": "554901f2-0356-4dbf-adea-f094d2d1d0ba",
+		"name": "SpellCheckPro",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Check Spelling (English)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-RapidAPI-Key",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"text\": \"The quik brown fox jumpd over the lzy dog.\",\r\n    \"lang_code\":\"en_US\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://spellcheckpro.p.rapidapi.com/check_spelling",
+					"protocol": "https",
+					"host": [
+						"spellcheckpro",
+						"p",
+						"rapidapi",
+						"com"
+					],
+					"path": [
+						"check_spelling"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check Spelling (Russian)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-RapidAPI-Key",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"text\": \"Добрый вее!\",\r\n    \"lang_code\": \"ru\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://spellcheckpro.p.rapidapi.com/check_spelling",
+					"protocol": "https",
+					"host": [
+						"spellcheckpro",
+						"p",
+						"rapidapi",
+						"com"
+					],
+					"path": [
+						"check_spelling"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
